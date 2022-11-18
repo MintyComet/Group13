@@ -1,16 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My_Name Homepage</title>
+	<title>Home Page</title>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="01-lifestyle/index.html">Lifestyle</a>
+	  <a href="02-map/index.html">Map/Routes</a>
+	  <a href="03-recipes/index.html">Recipe Of The Day</a>
+	  <a href="04-resources/index.html">Resources</a>
+		<a href="05-contribute/index.html">Contribute Advice</a>
+	</div>
 </head>
+<link rel="stylesheet" type="text/css" href="css/site.css">
+<script src="js/site.js" defer></script>
+<div id="main">
 <body>
 	<main>
-		<p>This page was generated from Wes' File Structure Template Repo.</p>
-		
-		<p>Go crazy and customize me.</p>
+		<div class="headercontainter">
+			<div class+"navimage">
+				<img class = "navimg" src="img/navicon.png" onclick="openNav()"/>
+			</div>
+			<div class="header1">
+				<h1><span>Guide to Surviving UCSC</span></h1>
+			</div>
+		</div>
+		<div class ="grid">
+			<div class = "grid-item">
+				<h2><span><a href="01-lifestyle/index.html">Lifestyle</a></span></h2>
+				<img class = "bookstudy" src="img/bookstudy.jpeg"/>
+			</div>
+			<div class = "grid-item">
+				<h2><span><a href="02-map/index.html">Map</a></span></h2>
+				<img class = "mapimg" src="img/map.png"/>
+			</div>
+			<div class = "grid-item">
+				<h2><span><a href="03-recipes/index.html">Recipe Of The Day</a></span></h2>
+				<img class = "ramen" src="img/ramen.png"/>
+			</div>
+			<div class = "grid-item">
+				<h2><span><a href="04-resources/index.html">Resources</a></span></h2>
+					<img class = "campus-resources" src="img/campus-resources.png"/>
+			</div>
+			<div class = "grid-item">
+				<h2><span><a href="05-contribute/index.html">Contribute</a></span></h2>
+				<img class = "advice" src ="img/advice.png"/>
+			</div>
+		</div>
 	</main>
-
-
 </body>
+</div>
 </html>
