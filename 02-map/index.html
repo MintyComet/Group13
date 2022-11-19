@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
+	<title>Map</title>
+
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
-</head>
-<body>
 
+	<div id="mySidenav" class="sidenav"><!-- Navigation bar code -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="../index.html">Home</a>
+	  <a href="../01-lifestyle/index.html">Lifestyle</a>
+	  <a href="../03-recipes/index.html">Recipe Of The Day</a>
+	  <a href="../04-resources/index.html">Resources</a>
+		<a href="../05-contribute/index.html">Contribute Advice</a>
+	</div>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script type="module" src="js/lab.js"></script>
+</head>
+<script src="js/lab.js" defer></script>
+<!-- Div to define what moves over when the nav bar is clicked -->
+<div id="main">
+<body>
+	<main>
+		<!-- Container for the Navigation image and logo -->
+		<div class="headercontainter">
+			<div class+"navimage">
+				<img class = "navimg" src="../img/navicon.png" onclick="openNav()"/>
+			</div>
+			<div class="header1">
+				<h1><span>Guide to Surviving UCSC</span></h1>
+			</div>
+		</div>
+		<!-- Start of the grid items -->
+		<div class ="mapgrid">
+			<div class = "grid-item">
+    	<!--The div element for the map -->
+    		<div id="map"></div>
+    		<script
+      		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      		defer
+    			></script>
+					<div class = "grid-item">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12751.056163733072!2d-122.04191345006278!3d36.96769187280651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x808e6a7e69670bf5%3A0x5bfc5494eda6df00!2s434%20Dufour%20Street%2C%20Santa%20Cruz%2C%20CA!3m2!1d36.9625628!2d-122.0397196!4m5!1s0x808e402606a729b7%3A0xf7c651f1e712b03e!2sSanta%20Cruz%20Cinema%2C%201405%20Pacific%20Ave%2C%20Santa%20Cruz%2C%20CA%2095060!3m2!1d36.9748975!2d-122.02655209999999!5e0!3m2!1sen!2sus!4v1668835112774!5m2!1sen!2sus" width= 100% height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
+</div>
 </html>
