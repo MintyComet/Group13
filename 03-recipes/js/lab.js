@@ -1,4 +1,4 @@
-<script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
+
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -22,19 +22,16 @@ const settings = {
 	}
 };
 
-$.ajax(settings).done(function (response) {
-	console.log(response);
-});
-
-fetch('https://recipesapi2.p.rapidapi.com/recipes/')
-   .then(response => response.json())
-   .then(recipes => showRecipes(recipes.results));
-
-   showRecipes = recipes => {
-  const recipesDiv = document.querySelector(‘#recipes’);
-  recipes.forEach(recipes => {
-    const recipesElement = document.createElement(‘p’);
-    recipesElement.innerText = `Recipe Name: ${recipes.name}`;
-    recipesDiv.append(recipesElement);
-  });
-}
+fetch("https://recipesapi2.p.rapidapi.com/recipes/")
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error("NETWORK RESPONSE ERROR");
+    }
+  })
+  .then(data => {
+    console.log(data);
+    displayRecipes(data)
+  })
+  .catch((error) => console.error("FETCH ERROR:", error));
