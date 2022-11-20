@@ -7,13 +7,13 @@
 
 	<div id="mySidenav" class="sidenav"><!-- Navigation bar code -->
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../index.html">Home</a>
 		<a href="01-lifestyle/index.html">Lifestyle</a>
 		<a href="02-map/index.html">Map/Routes</a>
-		<a href="03-recipes/index.html">Recipe Of The Day</a>
 		<a href="04-resources/index.html">Resources</a>
 		<a href="05-contribute/index.html">Contribute Advice</a>
 	</div>
-
+</head>
 	<script src="js/site.js" defer></script>
 	<!-- Div to define what moves over when the nav bar is clicked -->
 	<div id="main">
@@ -21,14 +21,21 @@
 		<main>
 			<!-- Container for the Navigation image and logo -->
 			<div class="headercontainter">
-				<div class+"navimage">
-					<img class = "navimg" src="img/navicon.png" onclick="openNav()"/>
+				<div class="navimage">
+					<img class = "navimg" src="../img/navicon.png" onclick="openNav()"/>
 				</div>
 				<div class="header1">
 					<h1><span>Recipes</span></h1>
 				</div>
 			</div>
-</head>
+			<!-- Place for recipe API -->
+			<div class = "recipeGrid">
+				<div class = "grid-item">
+					<div id="api"></div>
+						<form action="">
+							<label for="recipeName">Recipe Search:</label>
+							<input id="recipeName"><br><br>
+							<input type="submit" value="submit"></form>
 <body>
 
 </body>
