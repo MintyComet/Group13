@@ -25,3 +25,16 @@ const settings = {
 $.ajax(settings).done(function (response) {
 	console.log(response);
 });
+
+fetch('https://recipesapi2.p.rapidapi.com/recipes/')
+   .then(response => response.json())
+   .then(recipes => showRecipes(recipes.results));
+
+   showRecipes = recipes => {
+  const recipesDiv = document.querySelector(‘#recipes’);
+  recipes.forEach(recipes => {
+    const recipesElement = document.createElement(‘p’);
+    recipesElement.innerText = `Recipe Name: ${recipes.name}`;
+    recipesDiv.append(recipesElement);
+  });
+}
