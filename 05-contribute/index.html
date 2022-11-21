@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<title>Advice</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/lab.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<div id="mySidenav" class="sidenav"><!-- Navigation bar code -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="01-lifestyle/index.html">Lifestyle</a>
+	  <a href="02-map/index.html">Map/Routes</a>
+	  <a href="03-recipes/index.html">Recipe Of The Day</a>
+	  <a href="04-resources/index.html">Resources</a>
+		<a href="05-contribute/index.html">Contribute Advice</a>
+	</div>
 </head>
 <body>
+	<div class="headercontainter">
+		<div class+"navimage">
+			<img class = "navimg" src="img/navicon.png" onclick="openNav()"/>
+		</div>
+		<div class="header1">
+			<h1><span>Contribute Advice</span></h1>
+		</div>
+	</div>
+		<div>
+			<h1> Top posts<h1>
+		</div>
+		<div class="grid-container-element">
+    <div class="grid-child-element purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+    <div class="grid-child-element green">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</div>
+		<form action="/form/submit" method="GET">
+  <input type="text" name="text" class="search" placeholder="Search here!">
+  <input type="submit" name="submit" class="submit" value="Search">
+</form>
+		<h1> Got something to add?</h1>
+		<label>
+		<br><input type="text" id="user-input"></br>
+		</label>
+		<button id="my-button">Submit</button>
+		<div id = "output"></div>
 
 </body>
 </html>
