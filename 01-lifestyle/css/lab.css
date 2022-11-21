@@ -1,0 +1,54 @@
+
+
+
+.daily{
+  border-style: double;
+  border-width: 12px;
+  /*margin-right: 20px;*/
+  background-color: #d99e30;
+}
+
+.resource{
+  border-style: double;;
+  border-width: 12px;
+  background-color: #d99e30;
+
+}
+
+.itemsgrid{
+  display: grid;
+  padding: 30px;
+  grid-gap: 10px;
+  justify-content: flex-start;
+  margin-left: 10px;
+  margin-right: 10px;
+  grid-template-columns: auto auto auto;
+}
+
+
+
+.coffeestudy{
+  width: 400px;
+}
+.mindflower {
+  width: 75px;
+}
+.bodylife {
+  width:500px;
+}
+.lifeforest{
+  width:500px;
+}
+
+.coffeestudy {
+  width: 500px;
+}
+.mindflower {
+  width: 500px;
+}
+.bodylife {
+  width: 500px
+}
+.lifeforest{
+  width:500px;
+}

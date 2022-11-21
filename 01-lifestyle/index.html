@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
+	<title>Lifestyle</title>
+
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
-</head>
-<body>
 
+	<div id="mySidenav" class="sidenav"><!-- Navigation bar code -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="../index.html">Home</a>
+	  <a href="../01-lifestyle/index.html">Lifestyle</a>
+	  <a href="../02-map/index.html">Map/Routes</a>
+	  <a href="../03-recipes/index.html">Recipe Of The Day</a>
+	  <a href="../04-resources/index.html">Resources</a>
+		<a href="../05-contribute/index.html">Contribute Advice</a>
+	</div>
+</head>
+
+<script src="js/lab.js" defer></script>
+<!-- Div to define what moves over when the nav bar is clicked -->
+<div id="main">
+<body>
+	<main>
+		<!-- Container for the Navigation image and logo -->
+		<div class="headercontainter">
+			<div class+"navimage">
+				<img class = "navimg" src="../img/navicon.png" onclick="openNav()"/>
+			</div>
+			<div class="header1">
+				<h1><span>Lifestyle</span></h1>
+			</div>
+		</div>
+
+		<!-- Top row of content -->
+		<div class = "daily">
+			<h2><span>Tip of the Day</span></h2>
+			<img class = "coffeestudy" src="img/coffeestudy.jpeg"/>
+			<p>Insert daily tip here.</p>
+		</div>
+
+		<!-- Start of the grid items -->
+		<div class ="itemsgrid">
+			<div class = "grid-item">
+				<h2><span>Mind</span></h2>
+				<img class = "mindflower" src="img/mindflower.jpg"/>
+				<p>Tips for taking care of your mental health.</p>
+			</div>
+
+			<div class = "grid-item">
+				<h2><span>Body</span></h2>
+				<img class = "bodylife" src="img/bodylife.jpg"/>
+				<p>Tips for taking care of your physical health.</p>
+			</div>
+
+			<div class = "grid-item">
+				<h2><span>Events</span></h2>
+				<img class = "lifeforest" src="img/lifeforest.jpg"/>
+				<p>List of upcoming events related to self-care:</p>
+					<ul>
+						<li>Event 1</li>
+						<li>Event 2</li>
+						<li>Event 3, etc.</li>
+					</ul>
+			</div>
+			</div>
+
+			<!-- Bottom row of content -->
+			<div class = "resource">
+				<h3><span>Mental Health Resources</span></h3>
+				<p>List of mental health resources:</p>
+				<ul>
+					<li>Link 1</li>
+					<li>Link 2</li>
+					<li>Link 3, etc.</li>
+				</ul>
+			</div>
+		</div>
+
+	</main>
 </body>
+</div>
 </html>

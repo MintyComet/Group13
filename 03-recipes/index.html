@@ -1,11 +1,54 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Lab X - Subject/Topic</title>
+	<title>Recipes</title>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
-</head>
-<body>
 
-</body>
+	<div id="mySidenav" class="sidenav">
+		<!-- Navigation bar code -->
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="../index.html">Home</a>
+		<a href="01-lifestyle/index.html">Lifestyle</a>
+		<a href="02-map/index.html">Map/Routes</a>
+		<a href="04-resources/index.html">Resources</a>
+		<a href="05-contribute/index.html">Contribute Advice</a>
+	</div>
+</head>
+<script src="js/lab.js" defer></script>
+<!-- Div to define what moves over when the nav bar is clicked -->
+<div id="main">
+
+	<body>
+		<main>
+			<!-- Container for the Navigation image and logo -->
+			<div class="headercontainter">
+				<div class="navimage">
+					<img class="navimg" src="img/navicon.png" onclick="openNav()"/>
+				</div>
+				<div class="header1">
+					<h1><span>Recipes</span></h1>
+				</div>
+			</div>
+			<!-- Place for recipe API -->
+			<div class="grid">
+				<div class="grid-item">
+					<div id="api"></div>
+					<label for="recipeName">Recipe Search:</label>
+					<input id="recipeName"><br><br>
+					<input type="submit" value="submit">
+				</div>
+				<div class="grid-item">
+					<h2>Results</h2>
+					<p> This is where the results for the search will appear after hitting the submit button</p>
+				</div>
+				<div class="grid-item">
+					<h2>Recipe of the Day</h2>
+					<p>link and image for recipe of the day will appear here</p>
+				</div>
+			</div>
+		</main>
+	</body>
+</div>
 </html>

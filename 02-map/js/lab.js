@@ -27,3 +27,6 @@ function initMap() {
 }
 
 window.initMap = initMap;
+function pathpress(){
+
+}
