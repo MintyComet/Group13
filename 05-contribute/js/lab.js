@@ -26,4 +26,3 @@ document.getElementById("my-button").addEventListener("click", function() {
 
       paragraph.innerHTML = paragraph.textContent.replace(pattern, match => `<mark>${match}</mark>`)
   }
-  
