@@ -3,6 +3,7 @@
 
 <head>
 	<title>Recipes</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/site.css">
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 
@@ -25,7 +26,7 @@
 			<!-- Container for the Navigation image and logo -->
 			<div class="headercontainter">
 				<div class="navimage">
-					<img class="navimg" src="img/navicon.png" onclick="openNav()"/>
+					<img class="navimg" src="img/navicon.png" onclick="openNav()" />
 				</div>
 				<div class="header1">
 					<h1><span>Recipes</span></h1>
@@ -36,19 +37,22 @@
 				<div class="grid-item">
 					<div id="api"></div>
 					<label for="recipeName">Recipe Search:</label>
-					<input id="recipeName"><br><br>
-					<input type="submit" value="submit">
+					<form class="form">
+						<input id="search" type="text" class="input" placeholder="search..." />
+						<input type="submit" value="submit">
+					</form>
 				</div>
 				<div class="grid-item">
 					<h2>Results</h2>
-					<p> This is where the results for the search will appear after hitting the submit button</p>
+					<div id="output"></div>
 				</div>
 				<div class="grid-item">
 					<h2>Recipe of the Day</h2>
-					<p>link and image for recipe of the day will appear here</p>
+					<div id="damn"></div>
 				</div>
 			</div>
 		</main>
 	</body>
 </div>
+
 </html>
