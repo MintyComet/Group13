@@ -14,7 +14,7 @@ $.ajax({
 
       // Our sample url to make request
       url:
-          'http://api.weatherapi.com/v1/current.json?key=daf4577e9d844382bfc32743220512&q=95060&aqi=no',
+          'https://api.weatherapi.com/v1/current.json?key=daf4577e9d844382bfc32743220512&q=95060&aqi=no',
 
       // Type of Request
       type: "GET",
