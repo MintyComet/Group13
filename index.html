@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Home Page</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 
 	<div id="mySidenav" class="sidenav"><!-- Navigation bar code -->
@@ -30,15 +31,17 @@
 		</div>
 		<!-- Start of the grid items -->
 		<div class ="grid">
-			<div class = "grid-item">
+			<div class = "grid-item" >
 				<h2><span><a href="01-lifestyle/index.html">Lifestyle</a></span></h2>
 				<img class = "bookstudy" src="img/bookstudy.jpeg"/>
 			</div>
-			<div class = "grid-item">
-				<h2><span><a href="02-map/index.html">Map</a></span></h2>
-				<img class = "mapimg" src="img/map.png"/>
+			<div class = "grid-item" >
+				<h2><span><a href="02-map/index.html">Map/Routes</a></span></h2>
+				<div id = 'mapdisplay'>
+				</div>
+				<p> This section of the page will lead you to some student curated walking routes to most efficiently get to specific places on campus.</p>
 			</div>
-			<div class = "grid-item">
+			<div class = "grid-item" >
 				<h2><span><a href="03-recipes/index.html">Recipe Of The Day</a></span></h2>
 				<img class = "ramen" src="img/ramen.png"/>
 			</div>
@@ -46,7 +49,7 @@
 				<h2><span><a href="04-resources/index.html">Resources</a></span></h2>
 					<img class = "campus-resources" src="img/campus-resources.png"/>
 			</div>
-			<div class = "grid-item">
+			<div class = "grid-item" >
 				<h2><span><a href="05-contribute/index.html">Contribute</a></span></h2>
 				<img class = "advice" src ="img/advice.png"/>
 			</div>
