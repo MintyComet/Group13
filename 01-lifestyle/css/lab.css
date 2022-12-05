@@ -1,18 +1,28 @@
 
-
-
 .daily{
   border-style: double;
   border-width: 12px;
-  /*margin-right: 20px;*/
+  margin-left: 400px;
   background-color: #d99e30;
+
+}
+
+.dailyinner{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 15px;
 }
 
 .resource{
   border-style: double;;
   border-width: 12px;
   background-color: #d99e30;
+  margin-left: 400px;
+}
 
+.resourceinner{
+  padding: 25px;
 }
 
 .itemsgrid{
@@ -25,7 +35,49 @@
   grid-template-columns: auto auto auto;
 }
 
+h1 span{
+  font-size: 60px;
+  padding: 15px;
+}
 
+h1{
+  padding-bottom: 20px;
+  font-family: verdana;
+}
+
+h2{
+  font-size: 30px;
+  font-family: 'Lucida Grande', monospace;
+  margin-left: 10px;
+
+}
+
+h3{
+  font-size: 25px;
+  font-family: 'Lucida Grande', monospace;
+  margin-left: 10px;
+}
+
+h4{
+  font-weight: bold;
+  font-size: 20px;
+  font-family: palatino;
+  margin-left: 10px;
+}
+
+p{
+  margin-left: 10px;
+  font-size: 19px;
+  font-family: baskerville;
+  line-height: 25px;
+}
+
+ul{
+  font-size: 18px;
+  font-family: optima;
+  line-height: 27px;
+  list-style: none;
+}
 
 .coffeestudy{
   width: 400px;
