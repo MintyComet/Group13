@@ -1,29 +1,32 @@
+.everything{
+  padding: 10px;
+}
 
-.daily{
-  border-style: double;
+
+.dailygrid{
+  display: grid;
+  padding:10px;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  justify-content: center;
+  /* border-style: double;
   border-width: 12px;
-  margin-left: 400px;
-  background-color: #d99e30;
+  background-color: #d99e30; */
 
 }
 
-.dailyinner{
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 30px;
-  padding-top: 15px;
-}
-
-.resource{
-  border-style: double;;
+.resourcegrid{
+  display: grid;
+  padding:10px;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+  justify-content: center;
+  /* border-style: double;
   border-width: 12px;
-  background-color: #d99e30;
-  margin-left: 400px;
+  background-color: #d99e30; */
+
 }
 
-.resourceinner{
-  padding: 25px;
-}
 
 .itemsgrid{
   display: grid;
@@ -70,10 +73,12 @@ p{
   font-size: 19px;
   font-family: baskerville;
   line-height: 25px;
+  padding: 10px;
 }
 
 ul{
   font-size: 18px;
+  padding-right: 30px;
   font-family: optima;
   line-height: 27px;
   list-style: none;
