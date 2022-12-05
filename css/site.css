@@ -33,6 +33,7 @@ h1 span{
   border-width: 12px;
   background-color: #d99e30;
 }
+
 .navimg{
   width: 75px;
 }
@@ -101,7 +102,8 @@ h1 span{
   .sidenav a {font-size: 18px;}
 }
 .bookstudy {
-  width: 500px;
+  width: 800px;
+  height: 600px;
 }
 .campus-resources {
   width: 800px;
