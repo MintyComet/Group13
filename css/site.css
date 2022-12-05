@@ -33,6 +33,7 @@ h1 span{
   border-width: 12px;
   background-color: #d99e30;
 }
+
 .navimg{
   width: 75px;
 }
@@ -63,6 +64,9 @@ h1 span{
   font-size: 40px;
 }
 .grid-item a:link{
+  color: black;
+}
+.grid-item a:visited{
   color: black;
 }
 /* The navigation menu links */
@@ -101,10 +105,11 @@ h1 span{
   .sidenav a {font-size: 18px;}
 }
 .bookstudy {
-  width: 500px;
+  width: 800px;
+  height: 600px;
 }
 .campus-resources {
-  width: 600px;
+  width: 800px;
 }
 .ramen {
   width: 500px

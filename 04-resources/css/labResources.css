@@ -39,7 +39,7 @@ h1 span{
   width: 500px;
 }
 .slugSupport {
-  width:500px;
+  width:625px;
 }
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -90,15 +90,21 @@ h1 span{
   .sidenav a {font-size: 18px;}
 }
 .foodPantry {
-  width: 500px;
+  width: 625px;
 }
 .places4Students {
   width: 600px;
 }
 .UCSCCARE {
-  width: 500px
+  width: 625px
 }
 .resources {
   margin-left: 37%;
   text-decoration: underline;
+}
+.CADisabilityBenefits {
+  width: 600px;
+}
+.SantaCruzMetro {
+  width: 625px;
 }

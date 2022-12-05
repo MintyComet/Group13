@@ -7,34 +7,47 @@
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<div id="mySidenav" class="sidenav"><!-- Navigation bar code -->
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="01-lifestyle/index.html">Lifestyle</a>
-	  <a href="02-map/index.html">Map/Routes</a>
-	  <a href="03-recipes/index.html">Recipe Of The Day</a>
-	  <a href="04-resources/index.html">Resources</a>
-		<a href="05-contribute/index.html">Contribute Advice</a>
+		<a href="../index.html">Home</a>
+	  <a href="../01-lifestyle/index.html">Lifestyle</a>
+	  <a href="../02-map/index.html">Map/Routes</a>
+	  <a href="../03-recipes/index.html">Recipe Of The Day</a>
+	  <a href="../04-resources/index.html">Resources</a>
+		<a href="../05-contribute/index.html">Contribute Advice</a>
 	</div>
 </head>
+<div id="main">
 <body>
 	<div class="headercontainter">
 		<div class+"navimage">
 			<img class = "navimg" src="img/navicon.png" onclick="openNav()"/>
 		</div>
 		<div class="header1">
-			<h1><span>Contribute Advice</span></h1>
+			<h2><span>Contribute Advice</span></h2>
 		</div>
 	</div>
 		<div>
-			<h1> Top posts<h1>
+			<h1> Top Posts<h1>
 		</div>
 		<div class="grid-container-element">
-    <div class="grid-child-element purple">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <div class="grid-child-element purple">
+			<p id = "paragraph">Discover a secret of motivation: Find a passion in learning. Make your
+education meaningful to you. What do you want to accomplish at UCSC - and in
+your life - this year? How about his quarter? What do you need to do this week to
+help realize your goals? Today? Put your goals for the quarter, week and day in
+writing and use them to motivate you and to keep on track.
+			</p>
+			</div>
 
-    <div class="grid-child-element green">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-</div>
-		<form action="/form/submit" method="GET">
-  <input type="text" name="text" class="search" placeholder="Search here!">
-  <input type="submit" name="submit" class="submit" value="Search">
-</form>
+    <div class="grid-child-element green">
+			<p id = "paragraph">"Begin today!" That's all the note said. There was no indication from where it came or who may have written it. Had it been meant for someone else? Meghan looked around the room, but nobody made eye contact back. For a brief moment, she thought it might be a message for her to follow her dreams, but ultimately decided it was easier to ignore it as she crumpled it up and threw it away.
+			</p>
+			</div>
+
+  <input type="text" id="search" class="search" placeholder="Something Specific?">
+  <button id ="submit" onclick="search()">Search</button>
+
+	</div>
+
 		<h1> Got something to add?</h1>
 		<label>
 		<br><input type="text" id="user-input"></br>
@@ -43,4 +56,5 @@
 		<div id = "output"></div>
 
 </body>
+</div>
 </html>

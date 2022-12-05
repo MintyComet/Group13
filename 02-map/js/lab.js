@@ -9,22 +9,31 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
+//Ajax Call to weather API to get current info
+$.ajax({
 
-// Initialize and add the map
-// function initMap() {
-//   // The location of Uluru
-//   const uluru = { lat: -25.344, lng: 131.031 };
-//   // The map, centered at Uluru
-//   const map = new google.maps.Map(document.getElementById("map"), {
-//     zoom: 4,
-//     center: uluru,
-//   });
-//   // The marker, positioned at Uluru
-//   const marker = new google.maps.Marker({
-//     position: uluru,
-//     map: map,
-//   });
-// }
+      // Our sample url to make request
+      url:
+          'https://api.weatherapi.com/v1/current.json?key=daf4577e9d844382bfc32743220512&q=95060&aqi=no',
+
+      // Type of Request
+      type: "GET",
+      async: false,
+      dataType : "json",
+
+      // request is ok
+      success: function (data) {
+        $('#weather').html("<p>Current weather in Santa Cruz is: "+ data['current']["condition"]['text']+"</p><p>As of: " +data['location']["localtime"]+"</p>");
+        var x = JSON.stringify(data);
+        console.log(x);
+      },
+
+      // Error handling
+      error: function (error) {
+          console.log(`Error ${error}`);
+      }
+  });
+//Parrallax function to move divs on mouse movement
 document.addEventListener("mousemove", parallax);
       function parallax(event) {
         this.querySelectorAll(".grid-item").forEach((shift) => {
@@ -36,7 +45,7 @@ document.addEventListener("mousemove", parallax);
         });
       }
 
-// window.initMap = initMap;
+//Functions to change the map source
 $('#mapscript').html('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.162207841482!2d-122.0614438837959!3d36.98206116513918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e41a2ff8cbf4f%3A0x3a8e3b7c928320d5!2sUniversity%20of%20California%20Santa%20Cruz!5e0!3m2!1sen!2sus!4v1670204396578!5m2!1sen!2sus" width= 100% height="800" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>');
 
 $('#path1').click(function() {
